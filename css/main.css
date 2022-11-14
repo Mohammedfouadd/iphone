@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family:  Tahoma, Verdana, sans-serif;
+    background: #000;
+
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Small */
+  @media (min-width: 768px) {
+    .container{
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container{
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container{
+      width: 1470px;
+
+    }
+  }
+
+  /* ******** */
+  .container .head{
+display: flex;
+padding: 10px 0;
+margin: 20px 0;
+align-items: center;
+justify-content: space-between;
+  }
+.container .head .img img{
+   width: 50px;
+      }
+  .container .head .links{
+    display: flex;
+ justify-content: space-between;
+  }
+  .container .head .links li{
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .container .head .links li:hover{
+background-color: black;
+border-radius: 30px;
+}
+ 
+@media(max-width: 767px){
+    .container .head{
+        flex-direction: column;
+    }
+    .container .head .links {
+        margin-top: 20px;
+    }
+  .container .head .links li{
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+
+}
+/* ****** */
+.container .landing{
+    color: #fff;
+    margin-top: 30px;
+    display: flex;
+justify-content: space-between;
+
+}
+.container .landing .text{
+}
+
+.container .landing .text h1 {
+margin: 160px 0 60px;
+font-size: 50px;
+}
+.container .landing .text p{
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+.container .landing .text span{
+    
+    padding: 5px 15px;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ****** */
+.container .foot{
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.foot img{
+    width: 50px;
+    cursor: pointer;
+}
+
+@media(max-width: 767px){
+    .container .landing{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .container .landing .text h1 {
+    margin: 10px;
+    font-size: 20px;
+    }
+    .landing img{
+        width: 270px;
+    
+    }
+
+    .foot img{
+        width: 30px;
+        cursor: pointer;
+    }
+
+    }
